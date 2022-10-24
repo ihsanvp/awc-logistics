@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#9C2C4F"
+        primary: "#AB274F",
+        secondary: "#FFF5E4"
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"]
       }
     },
   },
