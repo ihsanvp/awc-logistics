@@ -3,8 +3,8 @@ import { Icon } from "astro-icon";
 import CustomerCard from "./CustomerCard.astro";
 ---
 
-<section class="container mx-auto">
-  <div class="h-[calc(100vh-100px)] flex flex-col">
+<section class="h-[calc(100vh-100px)] bg-secondary">
+  <div class="container mx-auto flex flex-col h-full">
     <div class="flex-1">
       <div class="h-full flex-1 flex flex-col items-start justify-center">
         <div class="-mt-[0px] flex flex-col items-start justify-center gap-16">
@@ -26,7 +26,7 @@ import CustomerCard from "./CustomerCard.astro";
         </div>
       </div>
     </div>
-    <div class="py-10">
+    <div class="pb-40">
       <div class="text-2xl font-medium">Trusted by 20,000+ customers</div>
       <div class="flex items-center mt-5 gap-5">
         <CustomerCard label="Google" icon="google" />

@@ -22,11 +22,10 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <slot />
+    <style is:global>
+      body {
+        /* @apply bg-secondary; */
+      }
+    </style>
   </body>
-
-  <style is:global>
-    body {
-      @apply bg-secondary;
-    }
-  </style>
 </html>
