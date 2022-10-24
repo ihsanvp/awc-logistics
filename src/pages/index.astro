@@ -1,41 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="AWC" description="AWC">
   <Navbar />
   <main>
-    <section class="container mx-auto">
-      <div class="h-[calc(100vh-100px)] flex">
-        <div class="flex-1 flex flex-col items-start justify-center">
-          <div
-            class="-mt-[100px] flex flex-col items-start justify-center gap-20"
-          >
-            <h1 class="text-7xl leading-[1.25] font-medium">
-              One-stop solution <br /> for all your logistics <br /> requirements
-            </h1>
-            <div class="flex items-center justify-start gap-5">
-              <button
-                class="bg-primary px-8 py-4 text-white hover:translate-x-[3px] hover:translate-y-[3px] btn"
-                >Get Started</button
-              >
-              <button class="px-8 py-4 hover:bg-black hover:bg-opacity-5"
-                >{"-> "}Request a quote</button
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Header />
   </main>
 </Layout>
-
-<style>
-  .btn {
-    box-shadow: 5px 5px 0px black;
-  }
-  .btn:hover {
-    box-shadow: 2px 2px 0px black;
-  }
-</style>
