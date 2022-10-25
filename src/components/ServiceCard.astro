@@ -1,0 +1,26 @@
+---
+import Icon from "astro-icon";
+
+export interface Props {
+  title: string;
+  icon: string;
+  pack?: string;
+}
+
+const pack = Astro.props.pack || "mdi";
+const { title, icon } = Astro.props;
+---
+
+<div class="flex flex-col gap-10 border border-black p-10 shadow-effect">
+  <Icon pack={pack} size={60} name={icon} />
+  <div class="text-4xl font-bold">{title}</div>
+  <div>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .shadow-effect {
+    box-shadow: 10px 10px 0px black;
+  }
+</style>

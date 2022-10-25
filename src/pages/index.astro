@@ -3,12 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import HeaderSection from "../components/HeaderSection.astro";
 import InfoSection from "../components/InfoSection.astro";
+import Background from "../components/Background.astro";
+import ServicesSection from "../components/ServicesSection.astro";
 ---
 
 <Layout title="AWC" description="AWC">
   <Navbar />
   <main>
-    <HeaderSection />
-    <InfoSection />
+    <Background color="light">
+      <HeaderSection />
+    </Background>
+    <Background color="dark">
+      <InfoSection />
+      <ServicesSection />
+    </Background>
   </main>
 </Layout>

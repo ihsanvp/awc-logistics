@@ -1,0 +1,36 @@
+---
+import SectionName from "./SectionName.astro";
+import SectionTitle from "./SectionTitle.astro";
+import ServiceCard from "./ServiceCard.astro";
+---
+
+<section>
+  <div class="container mx-auto">
+    <div class="h-screen flex flex-col justify-center">
+      <SectionName center>Services</SectionName>
+      <SectionTitle center>What we do</SectionTitle>
+      <div class="grid grid-cols-4 mt-20 gap-10">
+        <ServiceCard title="Road" icon="truck" pack="ph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod unde
+          voluptatem error quibusdam commodi in quaerat nam adipisci corporis
+          distinctio?
+        </ServiceCard>
+        <ServiceCard title="Air" icon="plane" pack="jam">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod unde
+          voluptatem error quibusdam commodi in quaerat nam adipisci corporis
+          distinctio?
+        </ServiceCard>
+        <ServiceCard title="Sea" icon="ship-line" pack="ri">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod unde
+          voluptatem error quibusdam commodi in quaerat nam adipisci corporis
+          distinctio?
+        </ServiceCard>
+        <ServiceCard title="Int" icon="modernweb" pack="file-icons">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod unde
+          voluptatem error quibusdam commodi in quaerat nam adipisci corporis
+          distinctio?
+        </ServiceCard>
+      </div>
+    </div>
+  </div>
+</section>

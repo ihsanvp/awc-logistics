@@ -1,0 +1,13 @@
+---
+export interface Props {
+  center?: boolean;
+}
+
+const { center } = Astro.props;
+---
+
+<div
+  class:list={["text-primary font-medium uppercase", { "text-center": center }]}
+>
+  <slot />
+</div>
