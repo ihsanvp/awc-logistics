@@ -1,14 +1,14 @@
 ---
-import SectionName from "../SectionName.astro";
-import SectionTitle from "../SectionTitle.astro";
 import ServiceCard from "../cards/ServiceCard.astro";
 ---
 
 <section>
   <div class="container mx-auto">
-    <div class="h-screen flex flex-col justify-center">
-      <SectionName center>Services</SectionName>
-      <SectionTitle center>What we do</SectionTitle>
+    <div class="h-screen flex flex-col justify-center items-center">
+      <div class="section-name text-center mb-5">What we do</div>
+      <div class="section-title text-center max-w-[50vw]">
+        We Manage Lead Logistics For World's Multinational Companies
+      </div>
       <div class="grid grid-cols-4 mt-20 gap-10">
         <ServiceCard title="Road" icon="truck" pack="ph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod unde
