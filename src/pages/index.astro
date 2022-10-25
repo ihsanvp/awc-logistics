@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
-import HeaderSection from "../components/HeaderSection.astro";
-import InfoSection from "../components/InfoSection.astro";
+import HeaderSection from "../components/sections/HeaderSection.astro";
+import AboutSection from "../components/sections/AboutSection.astro";
 import Background from "../components/Background.astro";
-import ServicesSection from "../components/ServicesSection.astro";
+import ServicesSection from "../components/sections/ServicesSection.astro";
 ---
 
 <Layout title="AWC" description="AWC">
@@ -14,7 +14,7 @@ import ServicesSection from "../components/ServicesSection.astro";
       <HeaderSection />
     </Background>
     <Background color="dark">
-      <InfoSection />
+      <AboutSection />
       <ServicesSection />
     </Background>
   </main>
