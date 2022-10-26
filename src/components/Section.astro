@@ -1,0 +1,33 @@
+---
+type Background = "default" | "light" | "dark" | "primary";
+type BG = { [key in Background]: string };
+
+export interface Props {
+  color?: Background;
+  gap?: number;
+}
+
+const { color = "default", gap = 0 } = Astro.props;
+
+const bg: BG = {
+  default: "white",
+  light: "#FFF5E4",
+  dark: "#FFEFDA",
+  primary: "#93153B",
+};
+---
+
+<section class="flex flex-col page-section">
+  <slot />
+</section>
+
+<style
+  define:vars={{ bg: bg[color], gap: `${gap}rem`, padding: `${gap / 1.5}rem` }}
+>
+  .page-section {
+    background: var(--bg);
+    gap: var(--gap);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+  }
+</style>
